@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matthew Kleitz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+        <link href="main.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="uk-container uk-section">
+            <h1 class="uk-heading">Matthew Kleitz</h1>
+
+
+            <div class="uk-child-width-1-2@s" uk-grid="masonry:true">
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <dic class="uk-card-header">
+                            <h3 class="uk-card-title">About</h3>
+                            <p>Computer Science & Math Student, Developer, and Musician located in the Hudson Valley</p>
+                        </dic>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            Graduating with a B.S. in Computer Science in May 2022, my course work has focused on theoretical computer science
+                            and applied mathematics. Currently employed with iD Tech as online computer science instructor.
+                            <br/><br/>
+                            <button id="res-button2" class="uk-button uk-button-medium">View Resume</button>
+                            <!-- <button id="res-button2" class="uk-button uk-button-medium" uk-tooltip="kleitzm1@newpaltz.edu">Email Me</button> -->
+                            <div class="uk-inline">
+                                <button class="uk-button uk-button-medium" type="button">Email Me</button>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active uk-list-title">kleitzm1@newpaltz.edu</li>
+                                        <hr/>
+                                        <li><a class="uk-link" href="mailto:kleitzm1@newpaltz.edu">Open Mail App</a></li>
+                                        <li><a class="uk-link" onclick="navigator.clipboard.writeText('kleitzm1@newpaltz.edu');UIkit.notification('Copied to clipboard!');">Copy Email to Clipboard</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Personal Projects</h3>
+                        <dl class="uk-description-list uk-description-list-divider">
+                            <dt>
+                            <div class="uk-grid-small" uk-grid>
+                                <p class="uk-width-expand p-title">Cellm <span class="uk-text-muted"> 2022, In Early Development</span></p>
+                                <ul class="uk-iconnav">
+                                    <li><a href="https://github.com/mattjk00/cell-machine" uk-icon="icon: github"></a></li>
+                                    <li><a href="https://mattjk00.github.io/cell-machine/" uk-icon="icon: home"></a></li>
+                                </ul>
+                            </div>
+                            </dt>
+                            
+                            <dd>
+                                A programming language for designing cellular automata. Inspired by Conway's
+                                Game of Life, this software package allows developers to create their cellular
+                                simulations using a simple programming language. The parser and interpreter are being
+                                developed using Rust. The library is designed to be renderer agnostic, so developers
+                                can visualize their simulations however they want.
+                            </dd>
+                            
+                            
+                            <dt>
+                                <div class="uk-grid-small" uk-grid>
+                                    <p class="uk-width-expand p-title">Mono Catcher <span class="uk-text-muted"> 2021</span></p>
+                                    <ul class="uk-iconnav">
+                                        <li><a href="https://github.com/mattjk00/monoc-c" uk-icon="icon: github"></a></li>
+                                        <li><a href="https://mattjk00.github.io/monoc-c/" uk-icon="icon: home"></a></li>
+                                    </ul>
+                                </div>
+                            </dt>
+                            <dd>
+                                Mono Catcher is an audio utility for catching 'fake' stereo files. It was created at the request
+                                of an Audio Engineer friend who would often spend hours converting faux-stereo stems that musician
+                                clients would send him.
+                                The software will automatically convert any stereo files with identical channels to mono.
+                                Developed using C and C++.
+                            </dd>
+                            
+                            <dt>
+                                <div class="uk-grid-small" uk-grid>
+                                    <p class="uk-width-expand p-title">Vino Art Files<span class="uk-text-muted"> 2021</span></p>
+                                    <ul class="uk-iconnav">
+                                        <li><a href="https://github.com/mattjk00/art-files" uk-icon="icon: github"></a></li>
+                                    </ul>
+                                </div>
+                            </dt>
+                            <dd>
+                                A pure C library for simple image/audio file IO. Designed for creative coders who need
+                                an easy to use and cross platform library that can load many different types of image 
+                                and audio files. The library also provides functions for programmatically editing and
+                                converting these files. 
+                            </dd>
+
+                            <dt>
+                                <div class="uk-grid-small" uk-grid>
+                                    <p class="uk-width-expand p-title">Crypto Currency Prototype<span class="uk-text-muted"> 2021</span></p>
+                                    <ul class="uk-iconnav">
+                                        <li><a href="https://github.com/mattjk00/vino-blockchain" uk-icon="icon: github"></a></li>
+                                    </ul>
+                                </div>
+                            </dt>
+                            <dd>
+                                This project was developed for education purposes. It is a functioning crypto currency
+                                implemented in Rust based on the bitcoin whitepaper. Peer to peer networking was implemented
+                                using libp2p. Although the project was not intended for commercial use, security and data
+                                integrity was an important focus. SHA256 encryption is used and the blockchian verifies
+                                all newly mined nodes and transactions.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Academic Projects</h3>
+                        <dl class="uk-description-list uk-description-list-divider">
+                            <dt>
+                                <div class="uk-grid-small" uk-grid>
+                                    <p class="uk-width-expand p-title">Differential Equation Visualizer <span class="uk-text-muted"> Fall 2021</span></p>
+                                    <ul class="uk-iconnav">
+                                        <li><a href="https://github.com/mattjk00/dxdy" uk-icon="icon: github"></a></li>
+                                    </ul>
+                                </div>
+                            </dt>
+                            <dd>
+                                An education tool for Applied Math and Differential Equations. Developed under the direction
+                                of a mathematics professor for use as an education tool for upper level applied math courses.
+                                The web interface was developed using React.js and Three.js. The user may input boundary
+                                conditions for a Laplace equation. The application will parse these boundary conditions and 
+                                compute the discrete Laplace equation. These results are then used to construct a 3D mesh
+                                using Three.js and are displayed on the screen.
+                            </dd>
+                            <dt>
+                                <div class="uk-grid-small" uk-grid>
+                                    <p class="uk-width-expand p-title">Uses of Genetic Algorithms in Machine Learning<span class="uk-text-muted"> Fall 2021</span></p>
+                                    <ul class="uk-iconnav">
+                                        <li><a href="files/matthewkleitz_ML_Report.pdf" uk-icon="icon: file-text"></a></li>
+                                    </ul>
+                                </div>
+                            </dt>
+                            <dd>
+                                This informal research paper was created for a student seminar in machine learning. The paper explores how genetica algorithms
+                                can be used in optimization problems such as feature selection and parameter estimation. To accompany the paper,
+                                I programmed an application in Rust that solves the Traveling Salesman problem using a genetic algorithm.
+                                I developed other genetic algorithms during my research that did not get included in the final paper. These
+                                included a genetic algorithm for factoring semiprimes (this did not yield efficient results) and an algorithm
+                                for computing a nonlinear regression on a dataset.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Music</h3>
+                        <dl class="uk-description-list uk-description-list-divider">
+                            <div class="uk-grid-small" uk-grid>
+                                <h4 class="uk-width-expand p-title">Swim Rest</h4>
+                                <ul class="uk-iconnav">
+                                    <li><a href="https://linktr.ee/swimrest" uk-icon="icon: play-circle"></a></li>
+                                    <li><a href="https://swimrest.bandcamp.com/" uk-icon="icon: home"></a></li>
+                                </ul>
+                            </div>
+                            <dd>
+                                <ul class="uk-list">
+                                    <li><span class="p-title">Move to Philly, 2020 | </span><i>Bass, Songwriting, Vocals</i></li>
+                                    <li><span class="p-title">May Day, 2018 | </span><i>Bass, Engineering, Songwriting, Vocals</i></li>
+                                    <li><span class="p-title">Deer Tracks, 2017 | </span><i>Bass, Vocals, Songwriting</i></li>
+                                    <li><span class="p-title">Wavesmash, 2017 | </span><i>Bass, Songwriting</i></li>
+                                    <li><span class="p-title">Vegan Metal Mouth, 2017 | </span><i>Bass, Engineering, Songwriting, Vocals</i></li>
+                                </ul>                                
+                            </dd>
+                            <div class="uk-grid-small" uk-grid>
+                                <h4 class="uk-width-expand p-title">Altarpiece</h4>
+                                <ul class="uk-iconnav">
+                                    <li><a href="https://open.spotify.com/artist/2uUXuFCN2zYAzmZbz7SZTe" uk-icon="icon: play-circle"></a></li>
+                                    <li><a href="https://altarpiece.bandcamp.com/" uk-icon="icon: home"></a></li>
+                                </ul>
+                            </div>
+                            <dd>
+                                <ul class="uk-list">
+                                    <li><span class="p-title">Real Easy, TBA | </span><i>Guitar, Vocals, Songwriting</i></li>
+                                    <li><span class="p-title">Altarpiece II, 2021 | </span><i>Bass, Guitar, Vocals, Songwriting, Engineering</i></li>
+                                    <li><span class="p-title">Live & Demo, 2021 | </span><i>Live Performance, Guitar, Vocals</i></li>
+                                    <li><span class="p-title">Altarpiece S/T, 2020 | </span><i>Bass, Guitar, Vocals, Songwriting, Engineering</i></li>
+                                </ul>                                
+                            </dd>                                                    
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Freelance Projects</h3>
+                        <dl class="uk-description-list uk-description-list-divider">
+                            <dt>
+                            <div class="uk-grid-small" uk-grid>
+                                <p class="uk-width-expand p-title">ilannattermix.com <span class="uk-text-muted"> Jan 2021 - May 2021</span></p>
+                                <ul class="uk-iconnav">
+                                    <li><a href="https://github.com/mattjk00/Ilan" uk-icon="icon: github"></a></li>
+                                    <li><a href="#" uk-icon="icon: warning" uk-tooltip="The website may currently be down as the client has forgotten to renew the domain."></a></li>
+                                </ul>
+                            </div>
+                            </dt>
+                            
+                            <dd>
+                                Main website developed using HTML, JavaScript, CSS, and UI-Kit. Firebase is used for simple database storage and authentication.
+                                An admin panel was also developed for the client. This panel was developed using React.js and the Firebase API.
+                                By providing an admin panel, the client is able to edit small things on their website without my assistance. They
+                                can edit their discography and featured items and have those changes reflected on the live site.
+
+                            </dd>
+                            <dt>
+                                <div class="uk-grid-small" uk-grid>
+                                    <p class="uk-width-expand p-title">1800bitethrough.com <span class="uk-text-muted"> May 2020 - July 2020</span></p>
+                                    <ul class="uk-iconnav">
+                                        <li><a href="https://github.com/mattjk00/lipcritic" uk-icon="icon: github"></a></li>
+                                        <li><a href="http://1800bitethrough.com/" uk-icon="icon: home"></a></li>
+                                    </ul>
+                                </div>
+                                </dt>
+                                
+                                <dd>
+                                    This two part project includes a full 3D video game created using Unity and a home page 
+                                    developed using standard web languages and p5.js. Assets and sounds were collected by
+                                    the client for use in the videogame. I was responsible for designing and writing the C#
+                                    code to make the game playable. A WebGL build of the game can be played at the above link.
+                                    <br/><i>Content Warning: Contains mild nudity and some flashing lights.</i>
+                                </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
